@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    ".dev.vars": "env",
+    ".dev.vars.example": "env"
+  }
+}
