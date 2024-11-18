@@ -82,10 +82,6 @@ declare global {
   interface ImportMeta {
     readonly env: ImportMetaEnv;
   }
-
-  namespace NodeJS {
-    interface ProcessEnv extends PrivateEnv {}
-  }
 }
 
 export { parseEnv, PUBLIC_ENV_PREFIX };
