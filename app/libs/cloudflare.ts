@@ -1,4 +1,4 @@
-import { CloudflareEnv } from "../types/vinxi";
+import type { CloudflareEnv } from "../types/vinxi";
 
 export function isInCloudflareCI() {
   return process.env.CF_PAGES_COMMIT_SHA !== undefined;
