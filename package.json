@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "vinxi dev",
-    "build": "cross-env BUILDING=true vinxi build",
+    "build": "vinxi build",
     "start": "vinxi start",
     "preview": "pnpm build && wrangler pages dev",
     "deploy": "pnpm build && wrangler pages deploy"
