@@ -1,4 +1,14 @@
-import type { CloudflareEnv } from "../types/vinxi";
+import type { Request } from "@cloudflare/workers-types";
+
+import type { Env } from "../libs/env";
+
+export type CloudflareEnv = Env & {
+  ASSETS: { fetch: (request: Request) => Promise<Response> };
+  CF_PAGES: "1";
+  CF_PAGES_BRANCH: string;
+  CF_PAGES_COMMIT_SHA: string;
+  CF_PAGES_URL: string;
+};
 
 export function isInCloudflareCI() {
   return process.env.CF_PAGES_COMMIT_SHA !== undefined;

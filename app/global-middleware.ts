@@ -1,6 +1,6 @@
 import { defineMiddleware } from "vinxi/http";
 
-import type { CloudflareEnv } from "./types/vinxi";
+import type { CloudflareEnv } from "./libs/cloudflare";
 
 export default defineMiddleware({
   onRequest: async (event) => {
