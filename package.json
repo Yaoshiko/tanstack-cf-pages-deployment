@@ -9,8 +9,8 @@
     "deploy": "pnpm build && wrangler pages deploy"
   },
   "dependencies": {
-    "@tanstack/react-router": "^1.81.14",
-    "@tanstack/start": "^1.81.15",
+    "@tanstack/react-router": "^1.105.0",
+    "@tanstack/start": "^1.105.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "vinxi": "^0.5.3",
