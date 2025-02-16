@@ -33,7 +33,12 @@ async function proxyCloudflareEnv() {
   return viteDefine;
 }
 
-function withGlobalMiddleware(app: App) {
+async function withGlobalMiddleware(app: any) {
+  // With more recent Tanstack version app is a Promise.
+  // This workaround is bad, but I don't think it's related to the issue,
+  // since I get the same error on my repo.
+  var app = await app;
+  
   return {
     ...app,
     config: {
