@@ -5,5 +5,5 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
-  return <p>{import.meta.env.VITE_APP_NAME}</p>;
+  return <p>Home</p>;
 }
